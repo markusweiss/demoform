@@ -1,80 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Bootstrap Iframe Test</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-    />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <style>
-      @media only screen and (max-width: 600px) {
-        body {
-          border: 2px solid red;
-          padding: 2rem;
-        }
+
+<head>
+  <title>Bootstrap Iframe Test</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <style>
+    body {
+      background-color: #E5EFF7;
+    }
+
+    h1 {
+      font-size: 18px;
+      color: #001353;
+    }
+
+    @media only screen and (max-width: 600px) {
+      body {
+        border: 2px solid red;
+        padding: 2rem;
+
       }
-      .example {
-        min-width: 320px;
-        max-width: 1024px;
-      }
-    </style>
-  </head>
-  <body>
-    <form class="example">
-      <div class="form-group">
-        <label for="exampleInputEmail">Ihr Vorname*</label>
-        <input
-          type="text"
-          class="form-control"
-          id="exampleInputVorname"
-          aria-describedby="vornameHelp"
-          placeholder="Bitte eingeben"
-        />
-      </div>
-      <div class="form-group">
-        <label for="exampleInputEmail">Ihr Nachname*</label>
-        <input
-          type="text"
-          class="form-control"
-          id="exampleInputNachname"
-          aria-describedby="nachnameHelp"
-          placeholder="Bitte eingeben"
-        />
-      </div>
-      <div class="form-group">
-        <label for="exampleInputEmail">Ihre E-Mail Adresse*</label>
-        <input
-          type="email"
-          class="form-control"
-          id="exampleInputEmail"
-          aria-describedby="emailHelp"
-          placeholder="Bitte eingeben"
-        />
-      </div>
-      <h3>Im welchem Bereich sind Zuschüsse für Sie relevant?</h3>
-      <p>Sie können mehrere Bereiche auswählen.</p>
-      <div class="form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-        <label class="form-check-label" for="exampleCheck1">Bauen</label>
-      </div>
-      <div class="form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck2" />
-        <label class="form-check-label" for="exampleCheck2">Sanieren</label>
-      </div>
-      <div class="form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck3" />
-        <label class="form-check-label" for="exampleCheck3"
-          >Elektromobilität</label
-        >
-      </div>
-      <button type="submit" class="btn btn-primary">
-        Jetzt Newsletter anmelden
-      </button>
-    </form>
-  </body>
+    }
+
+    .example {
+      min-width: 320px;
+      max-width: 1024px;
+    }
+
+    .link--button {
+      width: 22rem;
+      display: block;
+      background-color: #FF6600;
+      align-items: center;
+      border-radius: 0.2rem;
+      color: #FFFFFF;
+      font-size: 1.2rem;
+      line-height: 40px;
+      font-weight: 600;
+      justify-content: center;
+      padding: 0 1.5rem;
+      text-decoration: none;
+      margin-top: 2rem;
+    }
+
+    .link__text {
+      min-height: 2rem;
+      font-size: 16px;
+      text-align: center;
+      color: #FFFFFF;
+    }
+
+    .link__icon {
+      fill: #FFFFFF;
+      margin: 0 1.6rem 0 0;
+    }
+
+    svg {
+      width: 40px;
+    }
+  </style>
+</head>
+
+<body>
+  <form class="example">
+    <div class="form-group">
+      <label for="exampleInputEmail">Ihr Vorname*</label>
+      <input type="text" class="form-control" id="exampleInputVorname" aria-describedby="vornameHelp"
+        placeholder="Bitte eingeben" />
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail">Ihr Nachname*</label>
+      <input type="text" class="form-control" id="exampleInputNachname" aria-describedby="nachnameHelp"
+        placeholder="Bitte eingeben" />
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail">Ihre E-Mail Adresse*</label>
+      <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp"
+        placeholder="Bitte eingeben" />
+    </div>
+    <h1>Im welchem Bereich sind Zuschüsse für Sie relevant?</h1>
+    <p>Sie können mehrere Bereiche auswählen.</p>
+    <div class="form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+      <label class="form-check-label" for="exampleCheck1">Bauen</label>
+    </div>
+    <div class="form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck2" />
+      <label class="form-check-label" for="exampleCheck2">Sanieren</label>
+    </div>
+    <div class="form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck3" />
+      <label class="form-check-label" for="exampleCheck3">Elektromobilität</label>
+    </div>
+    <a class="link--button">
+      <span class="link__icon">
+        <svg id="ac1c11b7-2153-4f81-8770-77633a2ba51c" data-name="newsletter" xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 100 100">
+          <path
+            d="M38.72,36.59v5.67H0V36.59Zm52,.74H50.26L70.53,52.75ZM38.77,47.17v5.66H7.46V47.17Zm55.56-5.49L70.54,59.87l-.23-.17L47.19,42.1V62.67H94.33ZM38.77,57.74v5.67H16V57.74ZM100,31.66V68.34H41.52V31.66Z">
+          </path>
+        </svg>
+      </span><span class="link__text">Jetzt Newsletter anmelden<span></a>
+    </span>
+  </form>
+</body>
+
 </html>
